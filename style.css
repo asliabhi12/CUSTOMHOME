@@ -1,0 +1,544 @@
+/* .body-container {
+  background-color: indianred;
+  padding: 10px;
+  display: grid;
+  grid-template-columns : 10% 60% 10%;
+  grid-template-rows:auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: space-evenly; 
+  height: 600px;
+  align-content: space-evenly;
+
+}
+
+.ele-container {
+  background: wheat;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  background-color: #ffffff;
+  padding: 50px 128px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas:
+    "todo social social"
+    "todo social social"
+    "gfg leetcode github"
+    "gfg leetcode github"
+    "bookmark gnews gnews"
+    "bookmark gnews gnews"
+    "bookmark gnews gnews";
+}
+
+.ele-container {
+  padding: 20px;
+  font-size: 40px;
+  height: 300px;
+  border-radius: 15px;
+  font-family: "Poppins", arial;
+  font-style: normal;
+}
+
+.ele-container nav {
+  display: flex;
+  justify-content: space-between;
+}
+#todo-nav {
+  border-bottom: 0.5px solid rgba(41, 43, 48, 0.1);
+}
+.ele-container nav h2 {
+  display: flex;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+#ele-1 {
+  grid-area: todo;
+  border: none;
+  background: #faf9f0;
+  overflow: scroll;
+}
+#ele-1 button {
+  background: transparent;
+  border: none;
+
+  padding: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.to-do-container {
+  margin-top: 40px;
+
+
+}
+
+#ele-1 label {
+  margin-top: -20px;
+  font-family: "Poppins", arial;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  line-height: 10px;
+}
+
+#ele-2 {
+  grid-area: social;
+  display: grid;
+  grid-template-areas:
+    "twitter youtube spotify"
+    "instagram add spotify";
+  grid-column-gap: 23px;
+  grid-row-gap: 23px;
+  background: #f0f3fa;
+}
+
+.social-container {
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#twitter {
+  grid-area: twitter;
+  background: #c8dfef;
+  color: #00acee;
+}
+
+#instagram {
+  grid-area: instagram;
+  background: #c13584;
+  color: #ffff;
+}
+
+#youtube {
+  grid-area: youtube;
+  background: #efc8c8;
+  color: #c4302b;
+}
+
+.circle {
+  background: #f0f3fa;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.circle i {
+  line-height: 10px;
+}
+
+#add {
+  grid-area: add;
+  background: #ffffff;
+}
+#spotify {
+  grid-area: spotify;
+  background: #9fdfa6;
+  height: 100%;
+}
+
+#ele-3 {
+  grid-area: gfg;
+  background: #f0faf1;
+}
+
+.date {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.gfg-container {
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 40px;
+}
+
+#gfg-logo {
+  width: 44px;
+  height: 22px;
+}
+
+#gfg-today {
+  color: #2f8d46;
+}
+
+.gfg-container h2 {
+  font-weight: 600;
+  font-size: 24px;
+  /* identical to box height */
+
+  color: #292b30;
+}
+
+.gfg-container button {
+  background: #292b30;
+  border-radius: 5px;
+  color: #ebe4e0;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.last-days {
+  font-weight: 400;
+  font-size: 16px;
+  color: #292b30;
+}
+
+.last-days i {
+  color: #2f8d46;
+  cursor: pointer;
+}
+
+.last-seven-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.gfg-week-streak {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.done-gfg {
+  background: #2f8d46;
+}
+
+.not-done-gfg {
+  background: #c3dcc9;
+}
+
+#ele-4 {
+  grid-area: leetcode;
+  background: #FAF6F0;
+
+}
+
+.leet-nav-left {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* identical to box height */
+
+  color: #292b30;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leet-nav-left img {
+  margin-left: 10px;
+  width: 21px;
+  height: 11px;
+}
+
+#leet-code-icon {
+  height: 26px;
+  width: 26px;
+}
+
+.leet-streak-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.leet-month-streak {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.leet-box {
+  height: 33px;
+  width: 33px;
+  background: #eeeeee;
+
+  border: 1px solid #faf6f0;
+}
+
+.leet-lower-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yellow-text{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+color: #EFAF33;
+}
+
+.leet-right{
+ display: flex;
+ align-items: center;
+}
+.leet-right img{
+  width: 83px;
+height: 37px;
+}
+.fucking-text{
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leet-lower-text{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+
+
+/* identical to box height, or 24px */
+
+color: #292B30;
+}
+
+.light-green {
+  background: #8cc665;
+}
+
+.dark-green {
+  background: #44a340;
+}
+
+.yellow{
+  background: #D6E685;
+
+}
+
+#ele-5 {
+  grid-area: github;
+  background: #ECF7F9;
+  
+  
+}
+
+.white-box{
+  background: #FFFFFF;
+  padding:0px 0px 20px 0px;
+  border-radius: 7px;
+  
+}
+
+
+.git-streak-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.git-streaks{
+  
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 9px;
+
+}
+
+.git-streak-box{
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.lower-text-area{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-lower{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+
+/* identical to box height */
+
+color: #256874;
+
+
+}
+
+.sub-lower{
+ 
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height */
+
+color: #92BFC7;
+}
+
+.lower-left, .lower-right{
+  display: flex;
+  flex-direction:column;
+}
+
+.lower-right{
+  text-align:right;
+}
+
+
+
+
+#ele-6 {
+  grid-area: bookmark;
+  background: #f7e8e8;
+  height: 600px;
+}
+
+.book-container {
+  display: grid;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.bookmark-item {
+  padding: 15px 20px;
+  background: #ffffff;
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmark-text-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookmark-item h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  /* identical to box height */
+
+  color: #292b30;
+}
+
+.book-time {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  /* identical to box height */
+
+  color: rgba(41, 43, 48, 0.4);
+}
+
+.bookmark-item img {
+  width: 25px;
+  height: 13px;
+}
+
+#ele-7 {
+  grid-area: gnews;
+  height: 600px;
+  background: #e8edf7;
+  overflow: scroll;
+}
+
+.news-container {
+  display: grid;
+  margin-top: 15px;
+}
+
+.news-item {
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 13px;
+  padding: 17px 24px;
+  
+}
+
+.news-left-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.news-headline h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #292b30;
+}
+
+.lower-metadata {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  /* identical to box height */
+
+  color: rgba(41, 43, 48, 0.4);
+}
+
+.lower-metadata img {
+  width: 106px;
+  height: 36px;
+}
+
+.news-thumbnail{
+  width: 225px;
+height: 139px;
+
+}
