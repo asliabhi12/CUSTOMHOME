@@ -50,15 +50,77 @@
   border-radius: 15px;
   font-family: "Poppins", arial;
   font-style: normal;
+
 }
 
 .ele-container nav {
   display: flex;
   justify-content: space-between;
 }
+
+
+
+/*
+I am playing with CSS
+*/
+
+
+
+#ele-1 {
+  grid-area: todo;
+  border: none;
+  background: #faf9f0;
+  overflow: scroll;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 #todo-nav {
   border-bottom: 0.5px solid rgba(41, 43, 48, 0.1);
+  position:sticky;
+  top: 0;
+  background: #faf9f0;
+  padding-top: 15px;
+  z-index: 1;
+  
+    
 }
+
+.add-todo{
+  position: sticky; /* set the navbar position to absolute */
+  bottom: 12px; /* position the navbar at the bottom */
+  display: flex;
+  background: #faf9f0;
+  justify-content: space-between;
+  
+}
+
+#input-box{
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  
+  
+}
+
+#input-box:checked{
+  color: red;
+}
+#add-todo-btn{
+  padding: 5px;
+  outline:0;
+  border: none;
+  background: #d5d9d0;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 25px;
+
+  border-radius: 50%; 
+}
+
 .ele-container nav h2 {
   display: flex;
   font-weight: 600;
@@ -66,13 +128,16 @@
   line-height: 29px;
 }
 
-#ele-1 {
-  grid-area: todo;
-  border: none;
-  background: #faf9f0;
-  overflow: scroll;
+.to-do-container span{
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 0;
+
 }
-#ele-1 button {
+
+#three-dot {
   background: transparent;
   border: none;
 
@@ -85,9 +150,9 @@
 
 .to-do-container {
   margin-top: 40px;
-
-
 }
+
+
 
 #ele-1 label {
   margin-top: -20px;

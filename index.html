@@ -1,261 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./srcipt.js" defer></script>
+    <title>Custom Home</title>
+  </head>
+  <body>
     <div class="body-container">
-        <div class="ele-container" id="ele-1">
-           <nav  id="todo-nav"><h2>To Do Task</h2><button>...</button></nav>
-           <div class="to-do-container">
-           <label for="vehicle1"> <input type="checkbox" name="bbes" id="bbes"> I have a bike</label><br>
-           <label for="vehicle1"> <input type="checkbox" name="threejs" id="threejs">I have a bike</label><br>
-           <label for="vehicle1"> <input type="checkbox" name="celebrare" id="celebrare">I have a bike</label><br>
-           <label for="vehicle1"> <input type="checkbox" name="devops" id="devops">I have a bike</label><br>
+      <div class="ele-container" id="ele-1">
+        <nav id="todo-nav">
+          <h2>To Do Task</h2>
+          <button id="three-dot">...</button>
+        </nav>
+        <div class="to-do-container"></div>
+        <div class="add-todo">
+          <input type="text" id="input-box" placeholder="type something" />
+          <button id="add-todo-btn" onclick="addTask()" class="btn-1">
+            +
+          </button>
         </div>
+      </div>
+
+      <div class="ele-container" id="ele-2">
+        <div class="social-container" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="social-container" id="youtube">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="social-container" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="social-container" id="add">
+          <div class="circle">
+            <i class="fa-brands fa-add"></i>
+          </div>
+        </div>
+        <div class="social-container" id="spotify">spotify</div>
+      </div>
+
+      <div class="ele-container" id="ele-3">
+        <nav>
+          <h2 id="gfg-today">Today Challenge</h2>
+          <img id="gfg-logo" src="./assets/images/gfg-logo.png" alt="" />
+        </nav>
+        <div class="gfg-container">
+          <span class="date">05 April</span>
+          <h2>Count Special Numbers</h2>
+          <button>Solve Problem</button>
+          <br />
+          <span class="last-days"
+            >Last 7 days <i class="fa-solid fa-chevron-down"></i
+          ></span>
+          <div class="last-seven-container">
+            <div class="done-gfg gfg-week-streak"></div>
+            <div class="done-gfg gfg-week-streak"></div>
+            <div class="done-gfg gfg-week-streak"></div>
+            <div class="done-gfg gfg-week-streak"></div>
+            <div class="done-gfg gfg-week-streak"></div>
+            <div class="not-done-gfg gfg-week-streak"></div>
+            <div class="not-done-gfg gfg-week-streak"></div>
+          </div>
+        </div>
+      </div>
+      0
+      <div class="ele-container" id="ele-4">
+        <nav id="leet-nav-container">
+          <div class="leet-nav-left">
+            <h2>This Month</h2>
+            <img src="./assets/images/down-leet.png" alt="" srcset="" />
+          </div>
+          <img
+            src="./assets/images/leetcode.png"
+            id="leet-code-icon"
+            alt=""
+            srcset=""
+          />
+        </nav>
+        <div class="leet-streak-container">
+          <div class="leet-month-streak">
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="yellow leet-box"></div>
+            <div class="dark-green leet-box"></div>
+            <div class="dark-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="yellow leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="dark-green leet-box"></div>
+            <div class="dark-green leet-box"></div>
+            <div class="dark-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="yellow leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="light-green leet-box"></div>
+            <div class="yellow leet-box"></div>
+            <div class="dark-green leet-box"></div>
+            <div class="dark-green leet-box"></div>
+          </div>
         </div>
 
+        <div class="leet-lower-area">
+          <div class="leet-left">
+            <img src="./assets/images/leet-progress.png" alt="" />
+          </div>
+          <div class="leet-right">
+            <img src="./assets/images/leet-badges.png" alt="" />
+            <div class="fucking-text">
+              <span class="yellow-text">03</span>
 
-        <div class="ele-container" id="ele-2">
-           <div class ="social-container"id="twitter"><i class="fa-brands fa-twitter"></i></div>
-           <div class ="social-container"id="youtube"><i class="fa-brands fa-youtube"></i></div>
-           <div class ="social-container"id="instagram"><i class="fa-brands fa-instagram"></i></div>
-           <div class ="social-container"id="add">
-            <div class="circle"><i class="fa-brands fa-add">
-            </div></i>
-           </div>
-           <div class ="social-container"id="spotify">spotify</div>
+              <span class="leet-lower-text">Badges</span>
+            </div>
+          </div>
         </div>
+      </div>
 
-
-        <div class="ele-container" id="ele-3">
-            <nav><h2 id="gfg-today">Today Challenge</h2><img id ="gfg-logo"src="./assets/images/gfg-logo.png" alt=""></nav>
-            <div class="gfg-container">
-                <span class="date">05 April</span>
-                <h2>Count Special Numbers</h2>
-                <button>Solve Problem</button>
-                <br>
-                <span class="last-days">Last 7 days <i class="fa-solid fa-chevron-down"></i></span>
-                <div class="last-seven-container">
-                    <div class="done-gfg gfg-week-streak"></div>
-                    <div class="done-gfg gfg-week-streak"></div>
-                    <div class="done-gfg gfg-week-streak"></div>
-                    <div class="done-gfg gfg-week-streak"></div>
-                    <div class="done-gfg gfg-week-streak"></div>
-                    <div class="not-done-gfg gfg-week-streak"></div>
-                    <div class="not-done-gfg gfg-week-streak"></div>
-                </div>
+      <div class="ele-container" id="ele-5">
+        <div class="white-box">
+          <nav id="leet-nav-container">
+            <div class="leet-nav-left">
+              <h2>March</h2>
+              <img src="./assets/images/git-down.png" alt="" srcset="" />
             </div>
-        </div>
-        
-
-        <div class="ele-container" id="ele-4">
-            <nav id="leet-nav-container"><div class="leet-nav-left"><h2>This Month</h2><img src="./assets/images/down-leet.png" alt="" srcset=""></div> <img src="./assets/images/leetcode.png" id="leet-code-icon" alt="" srcset=""></nav>
-            <div class="leet-streak-container">
-            <div class="leet-month-streak">
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="yellow leet-box"></div>
-                <div class="dark-green leet-box"></div>
-                <div class="dark-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="yellow leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="dark-green leet-box"></div>
-                <div class="dark-green leet-box"></div>
-                <div class="dark-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="yellow leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="light-green leet-box"></div>
-                <div class="yellow leet-box"></div>
-                <div class="dark-green leet-box"></div>
-                <div class="dark-green leet-box"></div>
-    
+            <img
+              src="./assets/images/github-logo.png"
+              id="leet-code-icon"
+              alt=""
+              srcset=""
+            />
+          </nav>
+          <div class="git-streak-container">
+            <div class="git-streaks">
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box yellow"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box yellow"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box yellow"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box yellow"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box light-green"></div>
+              <div class="git-streak-box dark-green"></div>
+              <div class="git-streak-box light-green"></div>
             </div>
-            </div>
-
-            <div class="leet-lower-area">
-                <div class="leet-left">
-                    <img src="./assets/images/leet-progress.png" alt="">
-                </div>
-                <div class="leet-right">
-                    <img src="./assets/images/leet-badges.png" alt="">
-                    <div class="fucking-text">
-                    <span class="yellow-text">03</span>
-                    
-                    <span class="leet-lower-text">Badges</span>
-                </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="ele-container" id="ele-5">
-            <div class="white-box">
-            <nav id="leet-nav-container"><div class="leet-nav-left"><h2>March</h2><img src="./assets/images/git-down.png" alt="" srcset=""></div> <img src="./assets/images/github-logo.png" id="leet-code-icon" alt="" srcset=""></nav>
-            <div class="git-streak-container">
-                <div class="git-streaks">
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box yellow"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box yellow"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box yellow"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box yellow"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                    <div class="git-streak-box dark-green"></div>
-                    <div class="git-streak-box light-green"></div>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="lower-text-area">
-            <div class="lower-left">
-                <span class="main-lower" >160 Days</span>
-                <span class="sub-lower">Mar 25 - Mar 31</span>
-            </div>
-            <div class="lower-right">
-                <span class="main-lower" >15 Days</span>
-                <span class="sub-lower">Currect Streaks</span>
-
-            </div>
+          <div class="lower-left">
+            <span class="main-lower">160 Days</span>
+            <span class="sub-lower">Mar 25 - Mar 31</span>
+          </div>
+          <div class="lower-right">
+            <span class="main-lower">15 Days</span>
+            <span class="sub-lower">Currect Streaks</span>
+          </div>
         </div>
+      </div>
 
-
-
-           
-
+      <div class="ele-container" id="ele-6">
+        <nav><h2>Bookmarks</h2></nav>
+        <div class="book-container">
+          <div class="bookmark-item">
+            <div class="bookmark-text-left">
+              <h3>Some Text Heading</h3>
+              <span class="book-time">21 min ago</span>
+            </div>
+            <img src="./assets/images/gfg-logo.png" alt="" srcset="" />
+          </div>
+          <div class="bookmark-item">
+            <div class="bookmark-text-left">
+              <h3>Some Text Heading</h3>
+              <span class="book-time">21 min ago</span>
+            </div>
+            <img src="./assets/images/gfg-logo.png" alt="" srcset="" />
+          </div>
+          <div class="bookmark-item">
+            <div class="bookmark-text-left">
+              <h3>Some Text Heading</h3>
+              <span class="book-time">21 min ago</span>
+            </div>
+            <img src="./assets/images/gfg-logo.png" alt="" srcset="" />
+          </div>
+          <div class="bookmark-item">
+            <div class="bookmark-text-left">
+              <h3>Some Text Heading</h3>
+              <span class="book-time">21 min ago</span>
+            </div>
+            <img src="./assets/images/gfg-logo.png" alt="" srcset="" />
+          </div>
+          <div class="bookmark-item">
+            <div class="bookmark-text-left">
+              <h3>Some Text Heading</h3>
+              <span class="book-time">21 min ago</span>
+            </div>
+            <img src="./assets/images/gfg-logo.png" alt="" srcset="" />
+          </div>
         </div>
+      </div>
 
-        <div class="ele-container" id="ele-6">
-            <nav><h2>Bookmarks</h2></nav>
-            <div class="book-container">
-                <div class="bookmark-item">
-                    <div class="bookmark-text-left">
-                    <h3>Some Text Heading</h3>
-                    <span class="book-time">21 min ago</span>
-                </div>
-                    <img src="./assets/images/gfg-logo.png" alt="" srcset="">
-                </div>
-                <div class="bookmark-item">
-                    <div class="bookmark-text-left">
-                    <h3>Some Text Heading</h3>
-                    <span class="book-time">21 min ago</span>
-                </div>
-                    <img src="./assets/images/gfg-logo.png" alt="" srcset="">
-                </div>
-                <div class="bookmark-item">
-                    <div class="bookmark-text-left">
-                    <h3>Some Text Heading</h3>
-                    <span class="book-time">21 min ago</span>
-                </div>
-                    <img src="./assets/images/gfg-logo.png" alt="" srcset="">
-                </div>
-                <div class="bookmark-item">
-                    <div class="bookmark-text-left">
-                    <h3>Some Text Heading</h3>
-                    <span class="book-time">21 min ago</span>
-                </div>
-                    <img src="./assets/images/gfg-logo.png" alt="" srcset="">
-                </div>
-                <div class="bookmark-item">
-                    <div class="bookmark-text-left">
-                    <h3>Some Text Heading</h3>
-                    <span class="book-time">21 min ago</span>
-                </div>
-                    <img src="./assets/images/gfg-logo.png" alt="" srcset="">
-                </div>
-                
+      <div class="ele-container" id="ele-7">
+        <nav><h2>Google News</h2></nav>
+        <div class="news-container">
+          <div class="news-item">
+            <div class="news-left-text">
+              <div class="news-headline">
+                <h3>
+                  Evening brief: Anurag Thakur hits out at Congress after SC
+                  rejects plea against CBI, ED 'misuse'; all the latest news
+                </h3>
+              </div>
+              <div class="lower-metadata">
+                <span class="news-date-time">Apr 05, 2023 05:04 PM IST</span>
+                <img src="./assets/images/image 15.png" alt="" />
+              </div>
             </div>
-            
+            <div class="news-thumbnail">
+              <img src="./assets/images/news-thumbnail.png" alt="" />
+            </div>
+          </div>
         </div>
-
-        <div class="ele-container" id="ele-7">
-            <nav><h2>Google News</h2></nav>
-            <div class="news-container">
-                <div class="news-item">
-                    <div class="news-left-text">
-                        <div class="news-headline">
-                            <h3>Evening brief: Anurag Thakur hits out at Congress after SC rejects plea against CBI, ED 'misuse'; all the latest news</h3>
-                        </div>
-                        <div class="lower-metadata">
-                            <span class="news-date-time">Apr 05, 2023 05:04 PM IST</span>
-                            <img src="./assets/images/image 15.png" alt="">
-                        </div>
-                    </div>
-                    <div class="news-thumbnail">
-                        <img src="./assets/images/news-thumbnail.png" alt="">
-                    </div>
-                </div>
+        <div class="news-container">
+          <div class="news-item">
+            <div class="news-left-text">
+              <div class="news-headline">
+                <h3>
+                  Evening brief: Anurag Thakur hits out at Congress after SC
+                  rejects plea against CBI, ED 'misuse'; all the latest news
+                </h3>
+              </div>
+              <div class="lower-metadata">
+                <span class="news-date-time">Apr 05, 2023 05:04 PM IST</span>
+                <img src="./assets/images/image 15.png" alt="" />
+              </div>
             </div>
-            <div class="news-container">
-                <div class="news-item">
-                    <div class="news-left-text">
-                        <div class="news-headline">
-                            <h3>Evening brief: Anurag Thakur hits out at Congress after SC rejects plea against CBI, ED 'misuse'; all the latest news</h3>
-                        </div>
-                        <div class="lower-metadata">
-                            <span class="news-date-time">Apr 05, 2023 05:04 PM IST</span>
-                            <img src="./assets/images/image 15.png" alt="">
-                        </div>
-                    </div>
-                    <div class="news-thumbnail">
-                        <img src="./assets/images/news-thumbnail.png" alt="">
-                    </div>
-                </div>
+            <div class="news-thumbnail">
+              <img src="./assets/images/news-thumbnail.png" alt="" />
             </div>
-            <div class="news-container">
-                <div class="news-item">
-                    <div class="news-left-text">
-                        <div class="news-headline">
-                            <h3>Evening brief: Anurag Thakur hits out at Congress after SC rejects plea against CBI, ED 'misuse'; all the latest news</h3>
-                        </div>
-                        <div class="lower-metadata">
-                            <span class="news-date-time">Apr 05, 2023 05:04 PM IST</span>
-                            <img src="./assets/images/image 15.png" alt="">
-                        </div>
-                    </div>
-                    <div class="news-thumbnail">
-                        <img src="./assets/images/news-thumbnail.png" alt="">
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+        <div class="news-container">
+          <div class="news-item">
+            <div class="news-left-text">
+              <div class="news-headline">
+                <h3>
+                  Evening brief: Anurag Thakur hits out at Congress after SC
+                  rejects plea against CBI, ED 'misuse'; all the latest news
+                </h3>
+              </div>
+              <div class="lower-metadata">
+                <span class="news-date-time">Apr 05, 2023 05:04 PM IST</span>
+                <img src="./assets/images/image 15.png" alt="" />
+              </div>
+            </div>
+            <div class="news-thumbnail">
+              <img src="./assets/images/news-thumbnail.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
