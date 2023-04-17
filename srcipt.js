@@ -26,7 +26,7 @@ function addTask(){
     
 }
 
-console.log(listContainer)
+
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LABEL"){

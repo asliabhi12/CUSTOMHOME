@@ -22,17 +22,20 @@
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
-* {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .body-container {
   background-color: #ffffff;
-  padding: 50px 128px;
+  padding: 60px;
   display: grid;
   grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-rows: 1fr 1fr 2fr;
   grid-template-areas:
     "todo social social"
     "todo social social"
@@ -43,10 +46,47 @@
     "bookmark gnews gnews";
 }
 
+@media only screen and  (max-width: 550px){
+  
+  .body-container {
+    padding: 10px;
+
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-rows: 0.2fr 0.2fr 0.5fr 0.2fr 0.2fr 0.5fr 0.5fr;
+    grid-template-areas:
+    "todo"
+    "gfg"
+    "social"
+    "leetcode"
+    "github"
+    "bookmark"
+    "gnews"
+    ;
+    
+  }
+}
+
+@media (min-width: 550px) and (max-width: 750px){
+  .body-container {
+    padding: 30px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.2fr 0.5fr 0.2fr 0.2fr 0.5fr 0.5fr;
+    grid-template-areas:
+    "todo"
+    "gfg"
+    "social"
+    "leetcode"
+    "github"
+    "bookmark"
+    "gnews"
+    ;
+  }
+}
+
 .ele-container {
-  padding: 20px;
+  padding: 15px;
   font-size: 40px;
-  height: 300px;
   border-radius: 15px;
   font-family: "Poppins", arial;
   font-style: normal;
@@ -73,7 +113,7 @@ I am playing with CSS
   overflow: scroll;
   position: relative;
   padding-top: 0px;
-  padding-bottom: 0px;
+
 }
 
 #todo-nav {
@@ -81,8 +121,8 @@ I am playing with CSS
   position:sticky;
   top: 0;
   background: #faf9f0;
-  padding-top: 15px;
   z-index: 1;
+  
   
     
 }
@@ -105,9 +145,7 @@ I am playing with CSS
   
 }
 
-#input-box:checked{
-  color: red;
-}
+
 #add-todo-btn{
   padding: 5px;
   outline:0;
@@ -166,6 +204,11 @@ I am playing with CSS
   line-height: 10px;
 }
 
+.checked{
+  text-decoration: line-through;
+}
+
+
 #ele-2 {
   grid-area: social;
   display: grid;
@@ -192,6 +235,26 @@ I am playing with CSS
   background: #c8dfef;
   color: #00acee;
 }
+
+ /* unvisited link */
+ a:link {
+  all: unset;
+}
+
+/* visited link */
+a:visited {
+  all: unset;
+}
+
+/* mouse over link */
+a:hover {
+  all: unset;
+}
+
+/* selected link */
+a:active {
+ all: unset;
+} 
 
 #instagram {
   grid-area: instagram;
@@ -494,7 +557,7 @@ color: #92BFC7;
 #ele-6 {
   grid-area: bookmark;
   background: #f7e8e8;
-  height: 600px;
+  overflow: scroll;
 }
 
 .book-container {
@@ -546,7 +609,6 @@ color: #92BFC7;
 
 #ele-7 {
   grid-area: gnews;
-  height: 600px;
   background: #e8edf7;
   overflow: scroll;
 }
